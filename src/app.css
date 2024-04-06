@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply text-zinc-500;
+    }
+
+    h2 {
+        @apply text-zinc-950 text-2xl font-bold;
+    }
+
+    h3 {
+        @apply text-zinc-950 text-xl font-bold;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+}
+
+@layer components {
+    .main-nav {
+        a {
+            @apply text-sm font-medium transition-all hover:text-green-600;
+        }
+    }
+
+    a.active {
+        @apply text-green-600;
+    }
+}
